@@ -1,0 +1,73 @@
+<!DOCTYPE html><html lang="ru" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>Подбор пакета — SviataFilms</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Manrope:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#F4EEE3;--cd:#FBF8F1;--sf:#E9E1D2;--tx:#2B2A28;--mu:#7A7468;--ln:#CBBFA6;--rd:#B3322E;--g:block;--l:none;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2B2A28;--cd:#363430;--sf:#363430;--tx:#F4EEE3;--mu:#CBBFA6;--ln:#55514A;--rd:#E0706A;--g:none;--l:block;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#2B2A28;--cd:#363430;--sf:#363430;--tx:#F4EEE3;--mu:#CBBFA6;--ln:#55514A;--rd:#E0706A;--g:none;--l:block;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 15px/1.5 Manrope,system-ui,sans-serif}
+.w{max-width:680px;margin:0 auto;padding:28px 18px 40px}
+.hd{display:flex;align-items:center;gap:16px;margin-bottom:6px}.hd img{width:76px;height:76px}.lg-g{display:var(--g)}.lg-l{display:var(--l)}
+h1,h2,.pn{font-family:"Cormorant Garamond",Georgia,serif;font-weight:700}
+h1{font-size:21px;line-height:1.15;margin:6px 0 0;letter-spacing:.04em}.sub{color:var(--mu);font-size:14px;margin:0 0 6px}
+h2{font-size:21px;margin:30px 0 4px;letter-spacing:.03em}.hint{color:var(--mu);font-size:13px;margin:0 0 10px}
+.rule{height:1px;background:var(--ln);margin:14px 0;position:relative}.rule:after{content:"";position:absolute;left:50%;top:-3px;width:7px;height:7px;background:var(--rd);transform:translateX(-50%) rotate(45deg)}
+.g{display:grid;gap:8px}.o{display:flex;gap:11px;align-items:flex-start;background:var(--cd);border:1px solid var(--ln);border-radius:4px;padding:11px 13px;cursor:pointer}
+.o input{appearance:none;-webkit-appearance:none;margin:3px 0 0;width:18px;height:18px;flex:none;border:1.5px solid var(--ln);background:var(--bg);border-radius:3px;position:relative;cursor:pointer}.o input[type=radio]{border-radius:50%}.o input:checked{background:var(--rd);border-color:var(--rd)}.o input[type=checkbox]:checked:after{content:"";position:absolute;left:5px;top:1px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}.o input[type=radio]:checked:after{content:"";position:absolute;left:4px;top:4px;width:6px;height:6px;border-radius:50%;background:#fff}.o:has(input:checked){border-color:var(--rd);box-shadow:inset 0 0 0 1px var(--rd)}
+.o b{font-weight:700}.o small{display:block;color:var(--mu);font-size:12.5px}.o em{margin-left:auto;font-style:normal;color:var(--rd);font-weight:700;white-space:nowrap;font-size:13px}
+.n{display:none;margin:-2px 0 0 28px;align-items:center;gap:8px;font-size:13px}.n.on{display:flex}.n input{width:70px;padding:6px;border:1px solid var(--ln);border-radius:4px;background:var(--bg);color:var(--tx);font:inherit}
+.res{margin-top:30px;border:1.5px solid var(--rd);border-radius:4px;padding:18px;background:var(--cd)}
+.lb{font-size:11px;letter-spacing:.2em;color:var(--rd);font-weight:700;text-transform:uppercase}.pn{font-size:30px;margin:2px 0 0;letter-spacing:.04em;text-transform:uppercase}
+.pr{font-size:15px}.pr b{font-size:24px;color:var(--rd)}ul{list-style:none;padding:0;margin:10px 0}li{padding:3px 0 3px 18px;position:relative}li:before{content:"◆";position:absolute;left:0;color:var(--rd);font-size:9px;top:8px}li.p:before{content:"+";font-size:15px;top:2px}
+li span{float:right;color:var(--rd);font-weight:700}.tot{border-top:1px solid var(--ln);padding-top:10px;display:flex;justify-content:space-between;align-items:baseline}.tot b{font-size:26px;color:var(--rd)}
+.nt{font-size:13px;color:var(--mu);margin:10px 0 0}.alt{padding:6px 0;border-bottom:1px solid var(--ln);font-size:14px}.alt>div{display:flex;justify-content:space-between;gap:10px}.alt small{display:block;color:var(--mu);font-size:12px;font-weight:400}.alt.b>div{font-weight:700}
+.f{display:grid;gap:8px;margin:10px 0}.f input,textarea{width:100%;padding:10px;border:1px solid var(--ln);border-radius:4px;background:var(--bg);color:var(--tx);font:inherit}textarea{height:170px;resize:vertical}
+button{background:var(--rd);color:#fff;border:0;border-radius:4px;padding:12px 20px;font:700 14px Manrope,sans-serif;cursor:pointer;width:100%}
+.tg{width:40px;height:40px;margin-left:auto;padding:0;background:transparent;color:var(--tx);border:1px solid var(--ln);border-radius:50%;font-size:18px;line-height:1;align-self:flex-start;flex:none}li.m{opacity:.55}li.m:before{content:"−";font-size:16px;top:1px}.bs{display:grid;gap:8px;margin-top:10px}.bt{display:block;text-align:center;text-decoration:none;background:var(--rd);color:#fff;border-radius:4px;padding:12px 20px;font:700 14px Manrope,sans-serif}.o2{background:transparent!important;color:var(--tx)!important;border:1px solid var(--ln)!important}.bn{font:700 25px "Cormorant Garamond",Georgia,serif;letter-spacing:.16em;line-height:1}.dr{display:flex;gap:8px}.dr input{flex:1;min-width:0}.bt.sm{padding:10px 14px;white-space:nowrap;font-size:13px;width:auto}.sc{display:grid;grid-template-columns:1fr 1fr;gap:8px}.sc .bt{display:flex;align-items:center;justify-content:center;gap:8px}.sc svg{width:19px;height:19px;flex:none}.ft{text-align:center;color:var(--mu);font-size:12px;letter-spacing:.2em;margin-top:30px}
+</style></head><body><div class="w">
+<div class="hd"><div><div class="bn">SVIATA FILMS</div><h1>Подбор пакета</h1><p class="sub">Отметьте, что для вас важно — подскажем подходящий пакет и посчитаем стоимость</p></div><button class="tg" id="tg" aria-label="Сменить тему" title="Сменить тему"></button></div>
+<div class="rule"></div>
+<h2>1. Что снимаем?</h2><div class="g" id="sc"></div>
+<h2>2. Какие видео хотите получить?</h2><p class="hint">Можно несколько. Не уверены — пропустите, подскажем популярный вариант.</p><div class="g" id="vd"></div><p class="nt" id="wn" style="display:none"></p>
+<h2>3. Что ещё важно?</h2><div class="g" id="op"></div>
+<div class="res" id="res"></div>
+<h2>Отправить заявку</h2><p class="hint">Заполните поля, проверьте текст и нажмите «Скопировать текст».</p>
+<div class="f"><input id="nm" placeholder="Ваши имена"><div class="dr"><input id="dt" placeholder="Дата свадьбы"><a class="bt o2 sm" target="_blank" rel="noopener" href="https://koalendar.com/e/sviatafilms">Проверить дату</a></div><input id="pl" placeholder="Где будет праздник (город или район)"></div>
+<textarea id="sm" readonly></textarea><button id="cp" style="margin-top:10px">Скопировать текст</button><p class="hint" style="margin:16px 0 8px">Или отправьте сразу, по желанию. Telegram откроется с готовым текстом, в Instagram текст копируется — его останется вставить.</p><div class="sc"><a class="bt o2" id="tgl" target="_blank" rel="noopener" href="https://t.me/SviataFilms" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>Telegram</a><a class="bt o2" id="igl" target="_blank" rel="noopener" href="https://www.instagram.com/sviatafilms" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>Instagram</a></div>
+<div class="ft">SVIATA FILMS · 2027</div></div>
+<script>
+const $=s=>document.querySelector(s),B=" BYN",WN="Для формата «прогулка и церемония» есть опции: тизер, клип и рилсы. Материала может не хватить на свадебный фильм или хронику дня — вместо них можно сделать несколько клипов или тизеров.";
+const PK=[{n:"Церемония",p:450,sc:"c",v:["t"],r:0,i:{},l:["Индивидуальная консультация","Прогулка и церемония в ЗАГСе","Тизер","Цветокоррекция и звук"]},
+{n:"Эконом",p:600,sc:"f",v:["t","c"],r:0,i:{},l:["Индивидуальная консультация","Съёмка события полностью","Тизер","Клип","Цветокоррекция и звук"]},
+{n:"Стандарт",p:850,sc:"f",v:["t","c","f"],r:5,i:{},l:["Индивидуальная консультация","Съёмка события полностью","Тизер","Клип","Свадебный фильм","5 рилсов для соцсетей","Цветокоррекция и звук","Исходники"]},
+{n:"Всё включено",p:1500,sc:"f",v:["t","c","f","h"],r:1e9,i:{mc:1,li:1,k4:1,ru:1},l:["Индивидуальная консультация","Съёмка события полностью","Тизер","Клип","Свадебный фильм","Хроника дня","Рилсы без ограничений","Цветокоррекция и звук","Многокамерная съёмка","Световое сопровождение первого танца","Монтаж в 4K","Монтаж вне очереди","Исходники"]}];
+const VD=[["t","Тизер","короткий анонс дня · ~1 мин"],["c","Клип","главные моменты под музыку · ~2,5 мин"],["f","Свадебный фильм","история вашего дня · ~30 мин"],["h","Хроника дня","все основные события · ~2 часа"]];
+const OP=[["mc","Многокамерная съёмка","2–3 ракурса церемонии",100],["li","Световое сопровождение первого танца","2 прожектора",70],["k4","Монтаж в 4K","",50],["lv","Love Story","съёмка пары до свадьбы",150],["ru","Монтаж вне очереди","готово до 1 месяца",200]];
+const row=(t,id,nm,v,h,s,pr)=>`<label class="o"><input type="${t}" name="${nm}" value="${v}"><span><b>${h}</b><small>${s}</small></span>${pr?`<em>+${pr}</em>`:""}</label>`;
+$("#sc").innerHTML=row("radio","","sc","f","Весь день","от церемонии до вечера").replace("<input","<input checked")+row("radio","","sc","c","Только прогулка и церемония в ЗАГСе","короткий формат, без банкета");
+$("#vd").innerHTML=VD.map(x=>row("checkbox","","vd",x[0],x[1],x[2])).join("");
+$("#op").innerHTML=`<label class="o"><input type="checkbox" id="rl"><span><b>Рилсы для соцсетей</b><small>короткие вертикальные ролики</small></span></label><div class="n" id="rn">Сколько:<input type="number" id="rc" min="1" max="30" value="5"></div>`+OP.map(x=>row("checkbox","","op",x[0],x[1],x[2],x[3])).join("");
+function rc(p,n){if(n<=p.r)return 0;return p.r?15*(n-p.r):100+15*Math.max(0,n-5)}
+function calc(){const sc=document.querySelector("[name=sc]:checked").value;let vs=[...document.querySelectorAll("[name=vd]:checked")].map(x=>x.value),auto=!vs.length;
+if(auto)vs=sc=="c"?["t"]:["f"];const os=[...document.querySelectorAll("[name=op]:checked")].map(x=>x.value),n=$("#rl").checked?Math.max(1,+$("#rc").value||5):0;
+$("#rn").classList.toggle("on",$("#rl").checked);$("#wn").textContent=WN;$("#wn").style.display=sc=="c"?"block":"none";
+const cs=PK.map((p,k)=>({p,k})).filter(({p})=>(sc=="c"||p.sc=="f")&&vs.every(v=>p.v.includes(v))).map(({p,k})=>{const ex=[],inc=[],sk=new Set();let t=p.p;if(!auto){p.v.forEach(v=>{if(!vs.includes(v))sk.add(VD.find(x=>x[0]==v)[1])});OP.forEach(o=>{if(p.i[o[0]]&&!os.includes(o[0]))sk.add(o[1])});if(p.r&&!n){sk.add("5 рилсов для соцсетей");sk.add("Рилсы без ограничений")}}
+OP.filter(o=>os.includes(o[0])).forEach(o=>p.i[o[0]]?inc.push(o[1]):(ex.push([o[1],o[3]]),t+=o[3]));
+if(n){const c=rc(p,n);c?(ex.push([p.r&&p.r<1e9?`Дополнительные рилсы, ${n-p.r} шт.`:`Рилсы, ${n} шт.`,c]),t+=c):inc.push(`Рилсы, ${n} шт.`)}
+return{p,k,ex,inc,sk,t}}).sort((a,b)=>a.t-b.t||b.k-a.k),b=cs[0],std=cs.find(c=>c.p.n=="Стандарт");
+let h=`<div class="lb">${auto?"Популярный вариант":"Вам подойдёт"}</div><div class="pn">${b.p.n}</div><div class="pr">от <b>${b.p.p}</b>${B}</div><ul>${b.p.l.map(x=>`<li${b.sk.has(x)?` class="m"`:""}>${x}</li>`).join("")}${b.ex.map(e=>`<li class="p">${e[0]}<span>+${e[1]}${B}</span></li>`).join("")}</ul>`;
+if(b.inc.length)h+=`<p class="nt">Уже входит в пакет: ${b.inc.join(", ").toLowerCase()}.</p>`;
+if(b.sk.size)h+=`<p class="nt">Знаком «−» помечено то, что входит в пакет, но вам не нужно: цена пакета от этого не меняется.</p>`;if(sc=="c"&&(vs.includes("f")||vs.includes("h")))h+=`<p class="nt">${WN}</p>`;h+=`<div class="tot"><span>Примерно</span><b>от ${b.t}${B}</b></div>`;
+if(std&&b.p.n!="Стандарт"&&b.k<2&&std.t-b.t<=300)h+=`<p class="nt"><b>Совет:</b> «Стандарт» выйдет всего на ${std.t-b.t}${B} больше — и добавятся свадебный фильм ~30 мин и 5 рилсов.</p>`;
+h+=`<p class="lb" style="margin-top:16px">Другие варианты</p>`+cs.map((c,i)=>`<div class="alt${i?"":" b"}"><div><span>${c.p.n}</span><span>от ${c.p.p}${B}</span></div>${c.ex.length?`<small>${c.ex.map(e=>`+ ${e[0]} ${e[1]}${B}`).join(" · ")} · всего от ${c.t}${B}</small>`:""}</div>`).join("")+`<div class="alt"><div><span>Индивидуальный вариант</span><span>по договорённости</span></div><small>не нашли подходящий пакет? Вместе подберём опции под ваши запросы</small></div>`;
+$("#res").innerHTML=h;
+const ex=b.ex.map(e=>`${e[0]} (+${e[1]}${B})`);
+$("#sm").value=`Здравствуйте! Хочу заказать свадебную видеосъёмку.\n`+($("#nm").value?`Имена: ${$("#nm").value}\n`:"")+($("#dt").value?`Дата: ${$("#dt").value}\n`:"")+($("#pl").value?`Место: ${$("#pl").value}\n`:"")+`Формат: ${sc=="c"?"прогулка и церемония в ЗАГСе":"весь день"}\nВидео: ${auto?"не выбрано (нужна подсказка)":vs.map(v=>VD.find(x=>x[0]==v)[1]).join(", ")}\nПакет: ${b.p.n} (от ${b.p.p}${B})\n`+(ex.length?`Дополнительно: ${ex.join("; ")}\n`:"")+`Примерная стоимость: от ${b.t}${B}`+(b.sk.size?`\nНе нужно делать (−): ${[...b.sk].join(", ")}`:"")+(sc=="c"&&(vs.includes("f")||vs.includes("h"))?`\nПримечание: ${WN}`:"");
+$("#tgl").href="https://t.me/SviataFilms?text="+encodeURIComponent($("#sm").value)}
+const R=document.documentElement,dk=()=>R.dataset.theme=="dark",lab=()=>$("#tg").textContent=dk()?"☀":"☾";
+try{const t=localStorage.getItem("t");if(t)R.dataset.theme=t}catch(e){}
+$("#tg").onclick=()=>{const t=dk()?"light":"dark";R.dataset.theme=t;try{localStorage.setItem("t",t)}catch(e){}lab()};lab();
+$("#igl").onclick=()=>{const t=$("#sm");t.select();try{navigator.clipboard.writeText(t.value).catch(()=>document.execCommand("copy"))}catch(e){document.execCommand("copy")}};
+document.addEventListener("input",calc);document.addEventListener("change",calc);calc();
+$("#cp").onclick=()=>{const t=$("#sm");t.select();try{navigator.clipboard.writeText(t.value).catch(()=>document.execCommand("copy"))}catch(e){document.execCommand("copy")}$("#cp").textContent="Скопировано ✓";setTimeout(()=>$("#cp").textContent="Скопировать текст",1800)};
+</script></body></html>
